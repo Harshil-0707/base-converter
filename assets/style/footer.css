@@ -1,0 +1,42 @@
+#footer svg {
+    fill: white !important;
+}
+#footer {
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#footer > p > a{
+    color: white;
+    font-size: small;
+}
+#footer > button {
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+}
+
+#copied {
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    color: green;
+    padding: 10px;
+    border: green 1px solid;
+    opacity: .5;
+    display: none;
+}
+@keyframes copied {
+    0% {
+        opacity: .5;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+}
