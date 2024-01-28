@@ -1,0 +1,9 @@
+#copied {
+    position: absolute;
+    color: green;
+    padding: 10px;
+    border: green 1px solid;
+    display: none;
+    background-color: black;
+    z-index: 1;
+}

@@ -1,11 +1,16 @@
+window.mousePosition = [0, 0]
+window.addEventListener("mousemove", (evt) => {
+    window.mousePosition = [evt.clientX, evt.clientY]
+})
+
 function copy(text) {
     navigator.clipboard.writeText(text);
     const msg = document.getElementById("copied").style;
     msg.display = "block";
-    msg.opacity = ".5";
-    msg.animation = "copied 5s forwards";
-    setTimeout(() => {
-        msg.display = "none";
-        msg.animation = null;
-    }, 5000);
+    msg.marginLeft = window.mousePosition[0].toString() + "px"
+    msg.marginTop = window.mousePosition[1].toString() + "px"
+
+    window.addEventListener("mousemove", () => {
+        msg.display = "none"
+    })
 }

@@ -18,25 +18,3 @@
     border: 0;
     cursor: pointer;
 }
-
-#copied {
-    position: absolute;
-    bottom: 0;
-    margin: 20px;
-    color: green;
-    padding: 10px;
-    border: green 1px solid;
-    opacity: .5;
-    display: none;
-}
-@keyframes copied {
-    0% {
-        opacity: .5;
-    }
-    10% {
-        opacity: 1;
-    }
-    100% {
-        opacity: .2;
-    }
-}
