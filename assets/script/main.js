@@ -19,10 +19,18 @@ window.fromBase = getBaseFromSelect(fromBaseElem)
 window.toBase = getBaseFromSelect(toBaseElem)
 fromBaseElem.addEventListener("change", (evt) => {
     window.fromBase = getBaseFromSelect(fromBaseElem)
+    Array.from(toBaseElem.options).forEach(element => {
+        element.disabled = false
+    });
+    toBaseElem.options[fromBaseElem.selectedIndex].disabled = true
     update()
 })
 toBaseElem.addEventListener("change", (evt) => {
     window.toBase = getBaseFromSelect(toBaseElem)
+    Array.from(fromBaseElem.options).forEach(element => {
+        element.disabled = false
+    });
+    fromBaseElem.options[toBaseElem.selectedIndex].disabled = true
     update()
 })
 
