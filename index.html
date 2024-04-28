@@ -15,7 +15,7 @@
             <div id="from">
                 <h2>Convert From</h2>
                 <div class="grid">
-                    <select class="bases">
+                    <select class="bases" id="from-base-select">
                         <option>Decimal (Base 10)</option>
                         <option>Binary (Base 2)</option>
                         <option>Hexadecimal (Base 16)</option>
@@ -34,15 +34,15 @@
                         <option>Base 17</option>
                     </select>
                     <br>
-                    <input id="in">
+                    <input id="in" maxlength="15">
                 </div>
             </div>
             <div id="to">
                 <h2>Convert To</h2>
                 <div class="grid">
-                    <select class="bases">
+                    <select class="bases" id="to-base-select">
                         <option>Decimal (Base 10)</option>
-                        <option selected>Binary (Base 2)</option>
+                        <option>Binary (Base 2)</option>
                         <option>Hexadecimal (Base 16)</option>
                         <option>Octal (Base 8)</option>
                         <option>Base 3</option>
@@ -69,5 +69,7 @@
             <p><a href="https://jothin.tech">Jothin Kumar</a></p>
         </footer>
         <p id="copied">Copied to clipboard &checkmark;</p>
+
+        <script src="assets/script/main.js"></script>
     </body>
 </html>
