@@ -52,6 +52,10 @@ fromBase10 = (input, toBase) => {
 function update() {
     inElem.value = inElem.value.toUpperCase();
     const val = inElem.value
+    if (!val) {
+        outElem.innerHTML = "..."
+        return
+    }
     if (!validate(val, window.fromBase)) {
         outElem.innerHTML = "Invalid input"
         return
@@ -70,3 +74,4 @@ function update() {
 const inElem = document.getElementById("in")
 const outElem = document.getElementById("out")
 inElem.addEventListener("input", update)
+update()
