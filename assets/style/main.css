@@ -12,6 +12,12 @@ body {
     padding: 2vh 3vw 2vh 3vw;
     border-radius: 10px;
     border: rgba(255, 255, 255, 0.1) 2px solid;
+    width: 50vw;
+}
+@media screen and (orientation: portrait) {
+    #main {
+        width: 85vw;
+    }
 }
 h1 {
     margin: 0;
@@ -25,7 +31,7 @@ h2 {
 #from-to {
     display: grid;
 }
-@media only screen and (min-width: 768px) {
+@media screen and (orientation: landscape) {
     #from-to {
         grid-template-columns: auto auto;
         text-align: center;
@@ -57,13 +63,13 @@ h2 {
 }
 
 #out-parent {
-    max-width: 20vw;
+    width: 20vw;
     text-align: left;
     cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (orientation: portrait) {
     #out-parent {
-        max-width: 50vw;
+        width: 85vw;
         text-align: center;
     }
 }
