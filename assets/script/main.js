@@ -41,7 +41,7 @@ function validate(input, base) {
     return input.split("").every((ch) => chrs_.includes(ch))
 }
 
-toBase10 = (input, fromBase) => input.split("").reverse().map((chr, index) => Number(chr)*fromBase**index).reduce((a, b) => a+b)
+toBase10 = (input, fromBase) => input.split("").reverse().map((chr, index) => (chrs.indexOf(chr))*fromBase**index).reduce((a, b) => a+b)
 fromBase10 = (input, toBase) => {
     console.log(input);
     res = ""
