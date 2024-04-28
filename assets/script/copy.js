@@ -4,6 +4,9 @@ window.addEventListener("mousemove", (evt) => {
 })
 
 function copy(text) {
+    if (text === "...") {
+        return
+    }
     navigator.clipboard.writeText(text);
     const msg = document.getElementById("copied").style;
     msg.display = "block";

@@ -57,13 +57,16 @@ fromBase10 = (input, toBase) => {
     return res
 }
 
+const copyElem = document.getElementById("msg-click-to-copy")
 function update() {
     inElem.value = inElem.value.toUpperCase();
     const val = inElem.value
     if (!val) {
         outElem.innerHTML = "..."
+        copyElem.style.display = "none"
         return
     }
+    copyElem.style.display = "block"
     if (!validate(val, window.fromBase)) {
         outElem.innerHTML = "Invalid input"
         return

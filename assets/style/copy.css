@@ -7,3 +7,6 @@
     background-color: black;
     z-index: 1;
 }
+#msg-click-to-copy {
+    display: none;
+}
