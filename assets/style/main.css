@@ -80,3 +80,7 @@ h2 {
     font-size: small;
     color: rgba(255, 255, 255, 0.5);
 }
+
+#in::selection {
+    background-color: rgba(255, 255, 255, .1);
+}
