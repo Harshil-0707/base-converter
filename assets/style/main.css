@@ -58,9 +58,6 @@ h2 {
     box-sizing: border-box;
     height: 30px;
 }
-.grid > select:focus, #in:focus {
-    outline: none;
-}
 
 #out-parent {
     width: 20vw;
